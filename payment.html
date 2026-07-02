@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@400..800&family=Sora:wght@400..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05dfd329a2.js" crossorigin="anonymous"></script>
+    <script src="site.js" defer></script>
+    <script src="payment.js" defer></script>
+    <link rel="stylesheet" href="payment.css">
+    <title>Fein - Payment</title>
+</head>
+
+<body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <header class="checkout-top">
+        <div class="welcome-content">
+            <div class="navi">
+                <div class="logoPic">
+                    <a href="home.html">Fein</a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="navbar">
+                    <a href="home.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="booky.html">BOOK TABLE</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+                <div class="leftPanel">
+                    <div class="svgs">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="menu.html" class="menuCta">Add More Items</a>
+                </div>
+            </div>
+
+            <div class="hero-copy">
+                <p class="eyebrow">Fein checkout studio</p>
+                <h1>Review your meal, lock delivery details, and confirm payment in one place.</h1>
+                <p class="subcopy">This is an advanced demo checkout for the restaurant site. It keeps the cart live,
+                    updates totals instantly, and gives the user a premium payment experience.</p>
+                <div class="step-strip">
+                    <span class="step-chip active">1. Cart</span>
+                    <span class="step-chip active">2. Delivery</span>
+                    <span class="step-chip active">3. Payment</span>
+                    <span class="step-chip">4. Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+        <section class="quick-picks-card">
+            <div class="section-heading">
+                <div>
+                    <p>Quick picks</p>
+                    <h2>Start fast, even if the cart is empty.</h2>
+                </div>
+                <span>Tap a preset to build the order instantly.</span>
+            </div>
+
+            <div class="quick-picks" id="quick-picks">
+                <button type="button" class="pick-card" data-quick-add data-name="Fein Signature Burger Box"
+                    data-price="7 800 RWF">
+                    <span class="pick-badge">Best seller</span>
+                    <h3>Fein Signature Burger Box</h3>
+                    <p>2 burgers, fries, house dip and cold drinks for a fast dinner fix.</p>
+                    <strong>7 800 RWF</strong>
+                </button>
+
+                <button type="button" class="pick-card" data-quick-add data-name="Family Pizza Night"
+                    data-price="12 400 RWF">
+                    <span class="pick-badge">Feeds 4</span>
+                    <h3>Family Pizza Night</h3>
+                    <p>2 pizzas, garlic bread and 4 canned drinks in one click.</p>
+                    <strong>12 400 RWF</strong>
+                </button>
+
+                <button type="button" class="pick-card" data-quick-add data-name="Late Night Crunch Combo"
+                    data-price="9 300 RWF">
+                    <span class="pick-badge">Night deal</span>
+                    <h3>Late Night Crunch Combo</h3>
+                    <p>Chicken bites, ramen, loaded fries and a thick shake for the table.</p>
+                    <strong>9 300 RWF</strong>
+                </button>
+            </div>
+        </section>
+
+        <form id="checkout-form" class="checkout-grid">
+            <section class="form-column">
+                <article class="checkout-card">
+                    <div class="card-head">
+                        <span>01</span>
+                        <div>
+                            <h3>Contact details</h3>
+                            <p>We use this to send delivery updates and order confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="field-grid">
+                        <label class="field">
+                            <span>Full name</span>
+                            <input type="text" id="customer-name" name="customer_name" placeholder="Achille Rugema"
+                                required>
+                        </label>
+
+                        <label class="field">
+                            <span>Email address</span>
+                            <input type="email" id="customer-email" name="customer_email"
+                                placeholder="fein@example.com" required>
+                        </label>
+
+                        <label class="field">
+                            <span>Phone number</span>
+                            <input type="tel" id="customer-phone" name="customer_phone" placeholder="+250 7xx xxx xxx"
+                                required>
+                        </label>
+
+                        <label class="field">
+                            <span>Delivery label</span>
+                            <input type="text" id="delivery-label" name="delivery_label"
+                                placeholder="Home, Office, Hostel">
+                        </label>
+                    </div>
+                </article>
+
+                <article class="checkout-card">
+                    <div class="card-head">
+                        <span>02</span>
+                        <div>
+                            <h3>Delivery setup</h3>
+                            <p>Choose speed, address, and anything the rider should know.</p>
+                        </div>
+                    </div>
+
+                    <div class="delivery-options">
+                        <label class="delivery-option active">
+                            <input type="radio" name="delivery_speed" value="standard" checked>
+                            <strong>Standard</strong>
+                            <span>24 - 32 mins</span>
+                            <em>1 200 RWF</em>
+                        </label>
+
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery_speed" value="priority">
+                            <strong>Priority</strong>
+                            <span>16 - 22 mins</span>
+                            <em>2 200 RWF</em>
+                        </label>
+
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery_speed" value="scheduled">
+                            <strong>Scheduled</strong>
+                            <span>Pick a later slot</span>
+                            <em>1 500 RWF</em>
+                        </label>
+                    </div>
+
+                    <div class="field-grid">
+                        <label class="field full">
+                            <span>Street address</span>
+                            <input type="text" id="street-address" name="street_address"
+                                placeholder="KG 11 Ave, Kigali" required>
+                        </label>
+
+                        <label class="field">
+                            <span>Apartment / suite</span>
+                            <input type="text" id="apartment" name="apartment" placeholder="Flat 2B">
+                        </label>
+
+                        <label class="field">
+                            <span>Area / landmark</span>
+                            <input type="text" id="landmark" name="landmark" placeholder="Near the roundabout"
+                                required>
+                        </label>
+
+                        <label class="field">
+                            <span>City</span>
+                            <input type="text" id="city" name="city" value="Kigali" required>
+                        </label>
+
+                        <label class="field">
+                            <span>Postal code</span>
+                            <input type="text" id="postal-code" name="postal_code" placeholder="00000">
+                        </label>
+                    </div>
+
+                    <div class="schedule-slot" id="schedule-slot" hidden>
+                        <label class="field">
+                            <span>Schedule date</span>
+                            <input type="date" id="scheduled-date" name="scheduled_date">
+                        </label>
+
+                        <label class="field">
+                            <span>Schedule time</span>
+                            <input type="time" id="scheduled-time" name="scheduled_time">
+                        </label>
+                    </div>
+
+                    <label class="field full">
+                        <span>Delivery notes</span>
+                        <textarea id="delivery-notes" name="delivery_notes" rows="4"
+                            placeholder="Extra ketchup, call on arrival, use side gate, etc."></textarea>
+                    </label>
+                </article>
+
+                <article class="checkout-card">
+                    <div class="card-head">
+                        <span>03</span>
+                        <div>
+                            <h3>Payment details</h3>
+                            <p>Switch methods instantly and preview the selected flow.</p>
+                        </div>
+                    </div>
+
+                    <div class="payment-switch">
+                        <button type="button" class="method-tab active" data-method-tab="card">Bank card</button>
+                        <button type="button" class="method-tab" data-method-tab="mobile">Mobile money</button>
+                        <button type="button" class="method-tab" data-method-tab="cash">Cash on delivery</button>
+                    </div>
+
+                    <div class="payment-panels">
+                        <section class="method-panel active" data-method-panel="card">
+                            <div class="wallet-preview">
+                                <div class="card-brand-row">
+                                    <span>Fein Pay</span>
+                                    <i class="fa-solid fa-wifi"></i>
+                                </div>
+                                <div class="card-chip"></div>
+                                <p class="card-number" id="card-preview-number">•••• •••• •••• 2048</p>
+                                <div class="card-meta">
+                                    <div>
+                                        <span>Card holder</span>
+                                        <strong id="card-preview-name">YOUR NAME</strong>
+                                    </div>
+                                    <div>
+                                        <span>Expires</span>
+                                        <strong id="card-preview-expiry">MM/YY</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-grid">
+                                <label class="field full">
+                                    <span>Card number</span>
+                                    <input type="text" id="card-number" data-payment-input="card" data-required="true"
+                                        inputmode="numeric" placeholder="4242 4242 4242 4242">
+                                </label>
+
+                                <label class="field">
+                                    <span>Name on card</span>
+                                    <input type="text" id="card-name" data-payment-input="card" data-required="true"
+                                        placeholder="Achille Rugema">
+                                </label>
+
+                                <label class="field">
+                                    <span>Expiry</span>
+                                    <input type="text" id="card-expiry" data-payment-input="card"
+                                        data-required="true" inputmode="numeric" placeholder="08/28">
+                                </label>
+
+                                <label class="field">
+                                    <span>CVV</span>
+                                    <input type="password" id="card-cvv" data-payment-input="card"
+                                        data-required="true" inputmode="numeric" placeholder="123">
+                                </label>
+
+                                <label class="field">
+                                    <span>Billing ZIP</span>
+                                    <input type="text" id="billing-zip" data-payment-input="card"
+                                        placeholder="00000">
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="method-panel" data-method-panel="mobile" hidden>
+                            <div class="mobile-banner">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div>
+                                    <h4>Mobile money flow</h4>
+                                    <p>Perfect for fast confirmation on MTN MoMo or Airtel Money.</p>
+                                </div>
+                            </div>
+
+                            <div class="field-grid">
+                                <label class="field">
+                                    <span>Provider</span>
+                                    <select id="wallet-provider" data-payment-input="mobile" data-required="true">
+                                        <option value="">Select provider</option>
+                                        <option value="mtn">MTN MoMo</option>
+                                        <option value="airtel">Airtel Money</option>
+                                        <option value="visa-wallet">Visa Wallet</option>
+                                    </select>
+                                </label>
+
+                                <label class="field">
+                                    <span>Wallet number</span>
+                                    <input type="tel" id="wallet-number" data-payment-input="mobile"
+                                        data-required="true" placeholder="+250 7xx xxx xxx">
+                                </label>
+
+                                <label class="field full">
+                                    <span>Payment reference</span>
+                                    <input type="text" id="wallet-reference" data-payment-input="mobile"
+                                        placeholder="Optional rider or desk note">
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="method-panel" data-method-panel="cash" hidden>
+                            <div class="cash-banner">
+                                <h4>Cash on delivery</h4>
+                                <p>We will prepare the order immediately and the rider collects payment at drop-off.</p>
+                            </div>
+
+                            <div class="field-grid">
+                                <label class="field">
+                                    <span>Change needed for</span>
+                                    <input type="text" id="cash-change" data-payment-input="cash"
+                                        placeholder="10 000 RWF">
+                                </label>
+
+                                <label class="field full checkbox-field">
+                                    <input type="checkbox" id="cash-ready" data-payment-input="cash">
+                                    <span>I will have cash ready when the rider arrives.</span>
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+
+                    <label class="consent-row">
+                        <input type="checkbox" id="save-details" checked>
+                        <span>Keep these delivery details for the next demo checkout.</span>
+                    </label>
+                </article>
+            </section>
+
+            <aside class="summary-column">
+                <article class="checkout-card summary-card">
+                    <div class="summary-head">
+                        <div>
+                            <p>Live order</p>
+                            <h3>Your basket</h3>
+                        </div>
+                        <span id="summary-count" class="count-pill">0 items</span>
+                    </div>
+
+                    <div id="summary-alert" class="summary-alert" hidden></div>
+
+                    <ul id="order-items" class="order-items"></ul>
+
+                    <div id="empty-state" class="empty-state">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h4>No items yet</h4>
+                        <p>Use the quick picks above or go back to the menu to build your order.</p>
+                        <a href="menu.html">Browse full menu</a>
+                    </div>
+
+                    <div class="promo-box">
+                        <label for="promo-code">Promo code</label>
+                        <div class="promo-row">
+                            <input type="text" id="promo-code" placeholder="Type code">
+                            <button type="button" id="apply-promo">Apply</button>
+                        </div>
+                        <p class="promo-hint">Try <code>FEIN10</code>, <code>CRUNCH500</code>, or
+                            <code>FREESHIP</code>.
+                        </p>
+                    </div>
+
+                    <div class="totals">
+                        <div>
+                            <span>Subtotal</span>
+                            <strong id="subtotal-value">0 RWF</strong>
+                        </div>
+                        <div>
+                            <span>Delivery</span>
+                            <strong id="delivery-value">1 200 RWF</strong>
+                        </div>
+                        <div>
+                            <span>Service fee</span>
+                            <strong id="service-value">0 RWF</strong>
+                        </div>
+                        <div>
+                            <span>Estimated tax</span>
+                            <strong id="tax-value">0 RWF</strong>
+                        </div>
+                        <div class="discount-row">
+                            <span>Discount</span>
+                            <strong id="discount-value">0 RWF</strong>
+                        </div>
+                        <div class="total-row">
+                            <span>Total</span>
+                            <strong id="total-value">0 RWF</strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="pay-now" class="pay-now">Confirm payment</button>
+                    <p class="disclaimer">Demo checkout for the project preview only. No real transaction is processed
+                        here.</p>
+                </article>
+
+                <article class="checkout-card insight-card">
+                    <div class="insight-line">
+                        <span>Kitchen prep</span>
+                        <strong>9 mins</strong>
+                    </div>
+                    <div class="insight-line">
+                        <span>Arrival window</span>
+                        <strong id="eta-label">24 - 32 mins</strong>
+                    </div>
+                    <div class="insight-line">
+                        <span>Need help?</span>
+                        <strong>Call +250 888 888 888</strong>
+                    </div>
+                </article>
+            </aside>
+        </form>
+    </main>
+
+    <div id="success-modal" class="success-modal" hidden>
+        <div class="success-card">
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <p class="eyebrow">Payment confirmed</p>
+            <h2>Order <span id="success-order-id">#FEIN0000</span> is in the kitchen queue.</h2>
+            <p id="success-copy">Your receipt, delivery note, and estimated arrival are ready.</p>
+
+            <div class="success-meta">
+                <div>
+                    <span>Total charged</span>
+                    <strong id="success-total">0 RWF</strong>
+                </div>
+                <div>
+                    <span>Arrival window</span>
+                    <strong id="success-eta">24 - 32 mins</strong>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <a href="menu.html" class="secondary-action">Add more items</a>
+                <button type="button" id="close-success" class="primary-action">Back to checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navbar = document.querySelector('.navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
