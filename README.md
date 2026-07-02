@@ -27,25 +27,22 @@ Fein is a static multi-page restaurant website built with plain HTML, CSS, and J
 
 ## Project Structure
 
-```text
-.
-|-- assets/
-|   `-- images/
-|-- .github/
-|   `-- workflows/
-|       `-- deploy-pages.yml
-|-- home.html
-|-- about.html
-|-- menu.html
-|-- booky.html
-|-- contact.html
-|-- payment.html
-|-- style.css
-|-- css2.css
-|-- payment.css
-|-- site.js
-`-- payment.js
-```
+| Path | Type | Purpose |
+| --- | --- | --- |
+| `assets/images/` | Folder | Stores all project images and visual assets |
+| `.github/workflows/deploy-pages.yml` | Workflow | Deploys the static site to GitHub Pages |
+| `index.html` | Page | Root entry that redirects to the home page |
+| `home.html` | Page | Main landing page |
+| `about.html` | Page | Restaurant story, values, and chefs |
+| `menu.html` | Page | Food menu and cart-building actions |
+| `booky.html` | Page | Table booking form |
+| `contact.html` | Page | Contact details, map, and media section |
+| `payment.html` | Page | Advanced checkout and payment page |
+| `style.css` | Stylesheet | Main styling for the home page |
+| `css2.css` | Stylesheet | Shared styling for inner pages |
+| `payment.css` | Stylesheet | Styling for the checkout/payment experience |
+| `site.js` | Script | Shared cart, navigation, and order flow logic |
+| `payment.js` | Script | Checkout, totals, promo code, and payment interactions |
 
 ## Run Locally
 
@@ -78,4 +75,3 @@ This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.
 - The checkout in `payment.html` is a demo UI flow, not a real payment gateway.
 - The cart is stored in browser `localStorage`.
 - Remote fonts and Font Awesome require internet access.
-
