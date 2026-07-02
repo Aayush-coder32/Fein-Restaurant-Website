@@ -30,7 +30,6 @@ Fein is a static multi-page restaurant website built with plain HTML, CSS, and J
 | Path | Type | Purpose |
 | --- | --- | --- |
 | `assets/images/` | Folder | Stores all project images and visual assets |
-| `.github/workflows/deploy-pages.yml` | Workflow | Deploys the static site to GitHub Pages |
 | `index.html` | Page | Root entry that redirects to the home page |
 | `home.html` | Page | Main landing page |
 | `about.html` | Page | Restaurant story, values, and chefs |
@@ -57,18 +56,6 @@ Then open:
 ```text
 http://localhost:8000/
 ```
-
-## GitHub Pages Deployment
-
-This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` for static deployment.
-
-### Steps
-
-1. Push this project to a GitHub repository.
-2. In GitHub, go to `Settings -> Pages`.
-3. Set the source to `GitHub Actions`.
-4. Push to the `main` branch.
-5. GitHub Actions will deploy the site automatically.
 
 ## Notes
 
