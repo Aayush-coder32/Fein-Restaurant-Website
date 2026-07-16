@@ -1,0 +1,104 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="menuBg" x1="92" y1="64" x2="1178" y2="694" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#140C09"/>
+      <stop offset="1" stop-color="#26140F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="134" y1="188" x2="342" y2="632" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C1A13"/>
+      <stop offset="1" stop-color="#1D120E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="34" fill="url(#menuBg)"/>
+  <circle cx="1096" cy="148" r="108" fill="#F48A45" fill-opacity="0.14"/>
+  <circle cx="154" cy="602" r="142" fill="#F6B86D" fill-opacity="0.1"/>
+  <rect x="54" y="42" width="1172" height="676" rx="28" fill="#19110D" stroke="#F7B06F" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="54" y="42" width="1172" height="54" rx="28" fill="#261711"/>
+  <circle cx="92" cy="69" r="7" fill="#FF7C60"/>
+  <circle cx="116" cy="69" r="7" fill="#FFB54E"/>
+  <circle cx="140" cy="69" r="7" fill="#5FD38D"/>
+  <text x="184" y="76" fill="#FFF1E4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Fein Menu</text>
+  <rect x="768" y="57" width="88" height="24" rx="12" fill="#3A261D"/>
+  <rect x="872" y="57" width="88" height="24" rx="12" fill="#3A261D"/>
+  <rect x="976" y="57" width="88" height="24" rx="12" fill="#3A261D"/>
+  <rect x="1080" y="57" width="102" height="24" rx="12" fill="#F48A45"/>
+  <rect x="96" y="140" width="230" height="520" rx="26" fill="url(#panel)"/>
+  <text x="124" y="188" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">CATEGORIES</text>
+  <g>
+    <rect x="122" y="220" width="178" height="58" rx="18" fill="#F48A45"/>
+    <circle cx="154" cy="249" r="14" fill="#1B120E"/>
+    <text x="182" y="257" fill="#1B120E" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Burgers</text>
+  </g>
+  <g>
+    <rect x="122" y="294" width="178" height="58" rx="18" fill="#322019"/>
+    <circle cx="154" cy="323" r="14" fill="#F6B86D"/>
+    <text x="182" y="331" fill="#FFF6EF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Pizzas</text>
+  </g>
+  <g>
+    <rect x="122" y="368" width="178" height="58" rx="18" fill="#322019"/>
+    <circle cx="154" cy="397" r="14" fill="#F06B44"/>
+    <text x="182" y="405" fill="#FFF6EF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Chicken</text>
+  </g>
+  <g>
+    <rect x="122" y="442" width="178" height="58" rx="18" fill="#322019"/>
+    <circle cx="154" cy="471" r="14" fill="#8FD467"/>
+    <text x="182" y="479" fill="#FFF6EF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Drinks</text>
+  </g>
+  <rect x="122" y="542" width="178" height="88" rx="22" fill="#261711" stroke="#F7B06F" stroke-opacity="0.26"/>
+  <text x="144" y="578" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Quick note</text>
+  <rect x="144" y="594" width="132" height="10" rx="5" fill="#8B7669"/>
+  <rect x="144" y="614" width="116" height="10" rx="5" fill="#8B7669"/>
+  <rect x="360" y="140" width="570" height="520" rx="26" fill="#221712"/>
+  <text x="392" y="188" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Menu table</text>
+  <text x="392" y="220" fill="#BFA89B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Browse food rows, prices, and cart actions</text>
+  <rect x="392" y="250" width="506" height="52" rx="16" fill="#2E1C15"/>
+  <text x="420" y="283" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Category</text>
+  <text x="556" y="283" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Food name</text>
+  <text x="730" y="283" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Price</text>
+  <text x="820" y="283" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Action</text>
+  <g>
+    <rect x="392" y="322" width="506" height="66" rx="18" fill="#1B120E" stroke="#3D281F"/>
+    <circle cx="426" cy="355" r="13" fill="#F48A45"/>
+    <rect x="456" y="344" width="178" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="456" y="364" width="136" height="10" rx="5" fill="#8F7A6E"/>
+    <rect x="708" y="340" width="72" height="20" rx="10" fill="#322019"/>
+    <rect x="810" y="336" width="66" height="28" rx="14" fill="#F48A45"/>
+  </g>
+  <g>
+    <rect x="392" y="404" width="506" height="66" rx="18" fill="#1B120E" stroke="#3D281F"/>
+    <circle cx="426" cy="437" r="13" fill="#F6B86D"/>
+    <rect x="456" y="426" width="178" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="456" y="446" width="150" height="10" rx="5" fill="#8F7A6E"/>
+    <rect x="708" y="422" width="72" height="20" rx="10" fill="#322019"/>
+    <rect x="810" y="418" width="66" height="28" rx="14" fill="#F48A45"/>
+  </g>
+  <g>
+    <rect x="392" y="486" width="506" height="66" rx="18" fill="#1B120E" stroke="#3D281F"/>
+    <circle cx="426" cy="519" r="13" fill="#F06B44"/>
+    <rect x="456" y="508" width="178" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="456" y="528" width="124" height="10" rx="5" fill="#8F7A6E"/>
+    <rect x="708" y="504" width="72" height="20" rx="10" fill="#322019"/>
+    <rect x="810" y="500" width="66" height="28" rx="14" fill="#F48A45"/>
+  </g>
+  <g>
+    <rect x="392" y="568" width="506" height="66" rx="18" fill="#1B120E" stroke="#3D281F"/>
+    <circle cx="426" cy="601" r="13" fill="#8FD467"/>
+    <rect x="456" y="590" width="178" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="456" y="610" width="146" height="10" rx="5" fill="#8F7A6E"/>
+    <rect x="708" y="586" width="72" height="20" rx="10" fill="#322019"/>
+    <rect x="810" y="582" width="66" height="28" rx="14" fill="#F48A45"/>
+  </g>
+  <rect x="958" y="140" width="228" height="520" rx="26" fill="#231711" stroke="#F7B06F" stroke-opacity="0.28"/>
+  <text x="988" y="188" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Cart preview</text>
+  <rect x="988" y="220" width="168" height="68" rx="18" fill="#2D1D16"/>
+  <text x="1014" y="255" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Current order</text>
+  <text x="1026" y="281" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">3 items</text>
+  <rect x="988" y="312" width="168" height="18" rx="9" fill="#8F7A6E"/>
+  <rect x="988" y="344" width="148" height="18" rx="9" fill="#8F7A6E"/>
+  <rect x="988" y="376" width="156" height="18" rx="9" fill="#8F7A6E"/>
+  <rect x="988" y="432" width="168" height="78" rx="20" fill="#1C120E"/>
+  <text x="1010" y="470" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Local cart sync</text>
+  <rect x="1010" y="484" width="116" height="10" rx="5" fill="#8F7A6E"/>
+  <rect x="988" y="544" width="168" height="50" rx="25" fill="#F48A45"/>
+  <text x="1030" y="576" fill="#1B120E" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Checkout</text>
+</svg>

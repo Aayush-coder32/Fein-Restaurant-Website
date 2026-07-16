@@ -2,6 +2,46 @@
 
 Fein is a static multi-page restaurant website built with plain HTML, CSS, and JavaScript. It includes a landing page, about page, menu, booking form, contact page, and an advanced demo checkout/payment flow.
 
+## Demo Images
+
+<table>
+  <tr>
+    <td width="33.33%"><img src="assets/images/readme/home-demo.svg" alt="Fein home page demo preview" /></td>
+    <td width="33.33%"><img src="assets/images/readme/menu-demo.svg" alt="Fein menu page demo preview" /></td>
+    <td width="33.33%"><img src="assets/images/readme/payment-demo.svg" alt="Fein payment page demo preview" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Home Page</strong><br>Hero banner, offers, and featured items</td>
+    <td align="center"><strong>Menu Page</strong><br>Category list, menu table, and cart actions</td>
+    <td align="center"><strong>Payment Page</strong><br>Checkout flow, delivery setup, and payment summary</td>
+  </tr>
+</table>
+
+## Pictorial Images
+
+<p align="center">
+  <img src="assets/images/main.jpg" alt="Signature burger and fries" width="32%" />
+  <img src="assets/images/o1.jpg" alt="Close-up burger offer image" width="32%" />
+  <img src="assets/images/o2.jpg" alt="Fresh pizza slice and toppings" width="32%" />
+</p>
+
+## Flow Diagram
+
+```mermaid
+flowchart TD
+    A[index.html] --> B[home.html]
+    B --> C[about.html]
+    B --> D[menu.html]
+    B --> E[booky.html]
+    B --> F[contact.html]
+    B -->|Hero CTAs and featured items| G[(localStorage cart)]
+    C -->|Place an order| H[payment.html]
+    D -->|Add to cart| G
+    G --> H
+    H -->|Add more items| D
+    E --> I[Web3Forms booking submission]
+```
+
 ## Pages
 
 - `index.html`: root entry that redirects to the home page

@@ -1,0 +1,76 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1140" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120B08"/>
+      <stop offset="1" stop-color="#2D1812"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="772" y1="158" x2="1092" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB063"/>
+      <stop offset="1" stop-color="#F26A2E"/>
+    </linearGradient>
+    <linearGradient id="card" x1="180" y1="508" x2="520" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#332119"/>
+      <stop offset="1" stop-color="#20130E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="34" fill="url(#bg)"/>
+  <circle cx="1082" cy="116" r="112" fill="#FF9F4F" fill-opacity="0.16"/>
+  <circle cx="188" cy="666" r="136" fill="#FF8742" fill-opacity="0.14"/>
+  <rect x="54" y="42" width="1172" height="676" rx="28" fill="#1A110D" stroke="#F7B06F" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="54" y="42" width="1172" height="54" rx="28" fill="#261711"/>
+  <circle cx="92" cy="69" r="7" fill="#FF7C60"/>
+  <circle cx="116" cy="69" r="7" fill="#FFB54E"/>
+  <circle cx="140" cy="69" r="7" fill="#5FD38D"/>
+  <text x="184" y="76" fill="#FFF1E4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Fein Home</text>
+  <rect x="784" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
+  <rect x="870" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
+  <rect x="956" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
+  <rect x="1042" y="57" width="126" height="24" rx="12" fill="#F48A45"/>
+  <rect x="104" y="138" width="456" height="472" rx="28" fill="#21140F"/>
+  <text x="126" y="194" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">FAST FOOD RESTAURANT</text>
+  <text x="126" y="266" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">Fresh flavors</text>
+  <text x="126" y="330" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">with a bold</text>
+  <text x="126" y="394" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">landing page</text>
+  <rect x="126" y="434" width="320" height="16" rx="8" fill="#7A6457"/>
+  <rect x="126" y="466" width="350" height="16" rx="8" fill="#7A6457"/>
+  <rect x="126" y="498" width="298" height="16" rx="8" fill="#7A6457"/>
+  <rect x="126" y="546" width="170" height="54" rx="27" fill="#F48A45"/>
+  <text x="168" y="581" fill="#1B120E" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Order Online</text>
+  <rect x="606" y="138" width="534" height="472" rx="28" fill="#231712"/>
+  <circle cx="874" cy="292" r="162" fill="url(#hero)"/>
+  <rect x="716" y="430" width="316" height="38" rx="19" fill="#6E4330"/>
+  <ellipse cx="874" cy="386" rx="108" ry="40" fill="#45251A"/>
+  <ellipse cx="874" cy="344" rx="108" ry="34" fill="#8D542F"/>
+  <ellipse cx="874" cy="322" rx="102" ry="24" fill="#6A2C1F"/>
+  <ellipse cx="874" cy="298" rx="110" ry="30" fill="#FFC46F"/>
+  <ellipse cx="874" cy="276" rx="94" ry="20" fill="#7EC462"/>
+  <ellipse cx="874" cy="252" rx="102" ry="24" fill="#E26A33"/>
+  <ellipse cx="874" cy="226" rx="112" ry="36" fill="#B66B34"/>
+  <rect x="1010" y="190" width="92" height="92" rx="24" fill="#2B1A14" stroke="#F6A25B" stroke-opacity="0.45"/>
+  <text x="1036" y="228" fill="#FFD4AA" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Deals</text>
+  <text x="1030" y="259" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">20% Off</text>
+  <rect x="1010" y="304" width="92" height="110" rx="24" fill="#2B1A14" stroke="#F6A25B" stroke-opacity="0.45"/>
+  <text x="1030" y="344" fill="#FFD4AA" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Items</text>
+  <text x="1041" y="384" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">09</text>
+  <g>
+    <rect x="104" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
+    <circle cx="148" cy="658" r="18" fill="#F48A45"/>
+    <rect x="180" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="180" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
+    <rect x="332" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
+  </g>
+  <g>
+    <rect x="474" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
+    <circle cx="518" cy="658" r="18" fill="#F3B75E"/>
+    <rect x="550" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="550" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
+    <rect x="702" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
+  </g>
+  <g>
+    <rect x="844" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
+    <circle cx="888" cy="658" r="18" fill="#F06B44"/>
+    <rect x="920" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
+    <rect x="920" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
+    <rect x="1072" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
+  </g>
+</svg>

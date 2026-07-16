@@ -1,0 +1,91 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="payBg" x1="74" y1="48" x2="1196" y2="706" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120C0B"/>
+      <stop offset="0.55" stop-color="#1B1311"/>
+      <stop offset="1" stop-color="#10181B"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="834" y1="134" x2="1100" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F48A45"/>
+      <stop offset="1" stop-color="#EA6748"/>
+    </linearGradient>
+    <linearGradient id="summary" x1="886" y1="226" x2="1146" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2730"/>
+      <stop offset="1" stop-color="#111A20"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="34" fill="url(#payBg)"/>
+  <circle cx="228" cy="140" r="110" fill="#F48A45" fill-opacity="0.14"/>
+  <circle cx="1108" cy="632" r="132" fill="#52C2C7" fill-opacity="0.12"/>
+  <rect x="54" y="42" width="1172" height="676" rx="28" fill="#171211" stroke="#7FE2E2" stroke-opacity="0.24" stroke-width="2"/>
+  <rect x="54" y="42" width="1172" height="54" rx="28" fill="#201716"/>
+  <circle cx="92" cy="69" r="7" fill="#FF7C60"/>
+  <circle cx="116" cy="69" r="7" fill="#FFB54E"/>
+  <circle cx="140" cy="69" r="7" fill="#5FD38D"/>
+  <text x="184" y="76" fill="#FFF1E4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Fein Checkout</text>
+  <rect x="774" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
+  <rect x="876" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
+  <rect x="978" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
+  <rect x="1080" y="57" width="102" height="24" rx="12" fill="#F48A45"/>
+  <text x="106" y="154" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">FEIN CHECKOUT STUDIO</text>
+  <text x="106" y="220" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Review the cart,</text>
+  <text x="106" y="278" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">set delivery,</text>
+  <text x="106" y="336" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">and confirm payment</text>
+  <rect x="106" y="374" width="356" height="14" rx="7" fill="#7A6457"/>
+  <rect x="106" y="402" width="390" height="14" rx="7" fill="#7A6457"/>
+  <rect x="106" y="430" width="310" height="14" rx="7" fill="#7A6457"/>
+  <g>
+    <rect x="680" y="126" width="102" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
+    <text x="710" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cart</text>
+    <rect x="794" y="126" width="118" height="38" rx="19" fill="url(#chip)"/>
+    <text x="822" y="151" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Delivery</text>
+    <rect x="924" y="126" width="110" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
+    <text x="952" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Payment</text>
+    <rect x="1046" y="126" width="126" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
+    <text x="1070" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Confirm</text>
+  </g>
+  <rect x="106" y="488" width="514" height="176" rx="26" fill="#1B1514" stroke="#2F2522"/>
+  <text x="136" y="530" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Contact details</text>
+  <g>
+    <rect x="136" y="552" width="214" height="38" rx="12" fill="#261E1C"/>
+    <rect x="368" y="552" width="214" height="38" rx="12" fill="#261E1C"/>
+    <rect x="136" y="606" width="214" height="38" rx="12" fill="#261E1C"/>
+    <rect x="368" y="606" width="214" height="38" rx="12" fill="#261E1C"/>
+  </g>
+  <rect x="656" y="208" width="486" height="456" rx="28" fill="url(#summary)" stroke="#64C9CE" stroke-opacity="0.28"/>
+  <text x="692" y="254" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Order summary</text>
+  <text x="692" y="286" fill="#A8BBC4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Live totals, promo logic, and payment method selection</text>
+  <g>
+    <rect x="692" y="318" width="414" height="74" rx="20" fill="#182127"/>
+    <rect x="718" y="338" width="152" height="14" rx="7" fill="#FFF1E4"/>
+    <rect x="718" y="362" width="120" height="12" rx="6" fill="#81949E"/>
+    <rect x="980" y="340" width="102" height="30" rx="15" fill="#F48A45"/>
+  </g>
+  <g>
+    <rect x="692" y="410" width="194" height="88" rx="22" fill="#182127"/>
+    <text x="718" y="448" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Promo code</text>
+    <rect x="718" y="462" width="138" height="12" rx="6" fill="#81949E"/>
+  </g>
+  <g>
+    <rect x="912" y="410" width="194" height="88" rx="22" fill="#182127"/>
+    <text x="938" y="448" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Delivery speed</text>
+    <rect x="938" y="462" width="138" height="12" rx="6" fill="#81949E"/>
+  </g>
+  <g>
+    <rect x="692" y="522" width="126" height="94" rx="22" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.42"/>
+    <text x="726" y="558" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Card</text>
+    <rect x="722" y="574" width="68" height="10" rx="5" fill="#7BCDD1"/>
+  </g>
+  <g>
+    <rect x="836" y="522" width="126" height="94" rx="22" fill="#1B1514"/>
+    <text x="860" y="558" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Mobile</text>
+    <rect x="864" y="574" width="72" height="10" rx="5" fill="#7A8A92"/>
+  </g>
+  <g>
+    <rect x="980" y="522" width="126" height="94" rx="22" fill="#1B1514"/>
+    <text x="1018" y="558" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cash</text>
+    <rect x="1006" y="574" width="74" height="10" rx="5" fill="#7A8A92"/>
+  </g>
+  <rect x="692" y="630" width="414" height="48" rx="24" fill="#F48A45"/>
+  <text x="822" y="661" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Confirm Payment</text>
+</svg>
