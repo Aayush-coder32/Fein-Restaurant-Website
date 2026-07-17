@@ -75,7 +75,7 @@ flowchart TD
 | `about.html` | Page | Restaurant story, values, and chefs |
 | `menu.html` | Page | Food menu and cart-building actions |
 | `booky.html` | Page | Table booking form |
-| `contact.html` | Page | Contact details, map, and media section |
+| `contact.html` | Page | Contact details, maps, and media section |
 | `payment.html` | Page | Advanced checkout and payment page |
 | `style.css` | Stylesheet | Main styling for the home page |
 | `css2.css` | Stylesheet | Shared styling for inner pages |
