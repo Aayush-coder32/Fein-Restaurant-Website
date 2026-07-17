@@ -61,7 +61,7 @@ flowchart TD
   - promo codes
   - delivery options
   - card / mobile money / cash-on-delivery methods
-  - confirmation modal
+  - confirmation modals
 - Booking form connected to Web3Forms
 - Centralized images inside `assets/images/`
 
