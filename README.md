@@ -2,6 +2,8 @@
 
 Fein is a static multi-page restaurant website built with plain HTML, CSS, and JavaScript. It includes a landing experience, menu browsing, table booking, contact details, and a client-side checkout demo that keeps the cart in `localStorage`.
 
+There is no build step or package installation required. You can run the site directly from a lightweight local server.
+
 ## Preview
 
 <table>
@@ -38,6 +40,28 @@ Fein is a static multi-page restaurant website built with plain HTML, CSS, and J
 - Table booking form connected to Web3Forms
 - Responsive navigation with mobile menu toggle
 - Visual assets organized under `assets/images/`
+
+## Checkout Demo Rules
+
+The checkout experience in `payment.html` is driven by `payment.js` and currently uses these demo values:
+
+| Rule | Value |
+| --- | --- |
+| Currency | `RWF` |
+| Standard delivery | `1,200 RWF` |
+| Priority delivery | `2,200 RWF` |
+| Scheduled delivery | `1,500 RWF` |
+| Service fee | `650 RWF` |
+| Tax rate | `8%` |
+| Cart storage key | `fein-cart` |
+
+### Promo Codes
+
+| Code | Effect |
+| --- | --- |
+| `FEIN10` | 10% off the food subtotal |
+| `CRUNCH500` | 500 RWF off orders from 3,000 RWF |
+| `FREESHIP` | Removes the delivery fee |
 
 ## Page Map
 
@@ -95,9 +119,18 @@ python -m http.server 8000
 
 You can also open `index.html` directly, but a local server gives more reliable browser behavior during testing.
 
+## Suggested QA Flow
+
+1. Open `home.html` and use a featured meal button to confirm it jumps to checkout with an item added.
+2. Open `menu.html` and add several rows to confirm the cart badge updates correctly.
+3. Open `payment.html` and test all three promo codes.
+4. Switch between `card`, `mobile`, and `cash` payment tabs to confirm validation states.
+5. Submit the booking form on `booky.html` only after replacing the default Web3Forms key with your own.
+
 ## Customization
 
-- Update menu items and pricing in `home.html` and `menu.html`
+- Update menu item names and prices in `home.html` and `menu.html`
+- Keep visible menu text accurate because the cart logic reads item names and pricing from the page markup
 - Replace the booking form `access_key` in `booky.html` with your own Web3Forms key
 - Adjust promo codes, fees, and tax rules in `payment.js`
 - Swap images inside `assets/images/` to match your own restaurant brand
