@@ -1,76 +1,134 @@
 <svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="120" y1="70" x2="1140" y2="690" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#120B08"/>
-      <stop offset="1" stop-color="#2D1812"/>
+    <linearGradient id="homeBg" x1="94" y1="54" x2="1178" y2="712" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#140B08"/>
+      <stop offset="0.48" stop-color="#2B1812"/>
+      <stop offset="1" stop-color="#100F14"/>
     </linearGradient>
-    <linearGradient id="hero" x1="772" y1="158" x2="1092" y2="470" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFB063"/>
-      <stop offset="1" stop-color="#F26A2E"/>
+    <linearGradient id="homeFront" x1="168" y1="118" x2="1106" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C1A14"/>
+      <stop offset="1" stop-color="#17100E"/>
     </linearGradient>
-    <linearGradient id="card" x1="180" y1="508" x2="520" y2="690" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#332119"/>
-      <stop offset="1" stop-color="#20130E"/>
+    <linearGradient id="homeTop" x1="116" y1="92" x2="1048" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4C3024"/>
+      <stop offset="1" stop-color="#241712"/>
     </linearGradient>
+    <linearGradient id="homeSide" x1="1084" y1="96" x2="1158" y2="582" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D1C16"/>
+      <stop offset="1" stop-color="#110C0A"/>
+    </linearGradient>
+    <linearGradient id="heroCard" x1="204" y1="188" x2="566" y2="536" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A2219"/>
+      <stop offset="1" stop-color="#1E1310"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="244" y1="454" x2="424" y2="506" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD07D"/>
+      <stop offset="1" stop-color="#F48239"/>
+    </linearGradient>
+    <linearGradient id="showcase" x1="620" y1="186" x2="1020" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#261713"/>
+      <stop offset="1" stop-color="#150F0D"/>
+    </linearGradient>
+    <radialGradient id="burgerAura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(852 302) rotate(90) scale(170 170)">
+      <stop stop-color="#FFB66C" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFB66C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="miniCard" x1="214" y1="566" x2="448" y2="646" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#352119"/>
+      <stop offset="1" stop-color="#1D120E"/>
+    </linearGradient>
+    <filter id="shadowLg" x="0" y="0" width="1280" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="28"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.03 0 0 0 0 0.02 0 0 0 0 0.02 0 0 0 0.45 0"/>
+    </filter>
+    <filter id="shadowSm" x="0" y="0" width="1280" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.03 0 0 0 0 0.02 0 0 0 0.34 0"/>
+    </filter>
+    <clipPath id="homeScreenClip">
+      <polygon points="138,128 1060,96 1132,608 210,640"/>
+    </clipPath>
   </defs>
-  <rect width="1280" height="760" rx="34" fill="url(#bg)"/>
-  <circle cx="1082" cy="116" r="112" fill="#FF9F4F" fill-opacity="0.16"/>
-  <circle cx="188" cy="666" r="136" fill="#FF8742" fill-opacity="0.14"/>
-  <rect x="54" y="42" width="1172" height="676" rx="28" fill="#1A110D" stroke="#F7B06F" stroke-opacity="0.28" stroke-width="2"/>
-  <rect x="54" y="42" width="1172" height="54" rx="28" fill="#261711"/>
-  <circle cx="92" cy="69" r="7" fill="#FF7C60"/>
-  <circle cx="116" cy="69" r="7" fill="#FFB54E"/>
-  <circle cx="140" cy="69" r="7" fill="#5FD38D"/>
-  <text x="184" y="76" fill="#FFF1E4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Fein Home</text>
-  <rect x="784" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
-  <rect x="870" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
-  <rect x="956" y="57" width="72" height="24" rx="12" fill="#3A261D"/>
-  <rect x="1042" y="57" width="126" height="24" rx="12" fill="#F48A45"/>
-  <rect x="104" y="138" width="456" height="472" rx="28" fill="#21140F"/>
-  <text x="126" y="194" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">FAST FOOD RESTAURANT</text>
-  <text x="126" y="266" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">Fresh flavors</text>
-  <text x="126" y="330" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">with a bold</text>
-  <text x="126" y="394" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">landing page</text>
-  <rect x="126" y="434" width="320" height="16" rx="8" fill="#7A6457"/>
-  <rect x="126" y="466" width="350" height="16" rx="8" fill="#7A6457"/>
-  <rect x="126" y="498" width="298" height="16" rx="8" fill="#7A6457"/>
-  <rect x="126" y="546" width="170" height="54" rx="27" fill="#F48A45"/>
-  <text x="168" y="581" fill="#1B120E" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Order Online</text>
-  <rect x="606" y="138" width="534" height="472" rx="28" fill="#231712"/>
-  <circle cx="874" cy="292" r="162" fill="url(#hero)"/>
-  <rect x="716" y="430" width="316" height="38" rx="19" fill="#6E4330"/>
-  <ellipse cx="874" cy="386" rx="108" ry="40" fill="#45251A"/>
-  <ellipse cx="874" cy="344" rx="108" ry="34" fill="#8D542F"/>
-  <ellipse cx="874" cy="322" rx="102" ry="24" fill="#6A2C1F"/>
-  <ellipse cx="874" cy="298" rx="110" ry="30" fill="#FFC46F"/>
-  <ellipse cx="874" cy="276" rx="94" ry="20" fill="#7EC462"/>
-  <ellipse cx="874" cy="252" rx="102" ry="24" fill="#E26A33"/>
-  <ellipse cx="874" cy="226" rx="112" ry="36" fill="#B66B34"/>
-  <rect x="1010" y="190" width="92" height="92" rx="24" fill="#2B1A14" stroke="#F6A25B" stroke-opacity="0.45"/>
-  <text x="1036" y="228" fill="#FFD4AA" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Deals</text>
-  <text x="1030" y="259" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">20% Off</text>
-  <rect x="1010" y="304" width="92" height="110" rx="24" fill="#2B1A14" stroke="#F6A25B" stroke-opacity="0.45"/>
-  <text x="1030" y="344" fill="#FFD4AA" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Items</text>
-  <text x="1041" y="384" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">09</text>
-  <g>
-    <rect x="104" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
-    <circle cx="148" cy="658" r="18" fill="#F48A45"/>
-    <rect x="180" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
-    <rect x="180" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
-    <rect x="332" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
+
+  <rect width="1280" height="760" rx="34" fill="url(#homeBg)"/>
+  <circle cx="1096" cy="110" r="126" fill="#FF9E57" fill-opacity="0.14"/>
+  <circle cx="178" cy="644" r="148" fill="#F06B44" fill-opacity="0.11"/>
+  <ellipse cx="692" cy="664" rx="452" ry="56" fill="#090708" fill-opacity="0.34"/>
+
+  <g filter="url(#shadowLg)">
+    <polygon points="178,170 1100,138 1172,650 250,682" fill="#0D0907" fill-opacity="0.82"/>
   </g>
-  <g>
-    <rect x="474" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
-    <circle cx="518" cy="658" r="18" fill="#F3B75E"/>
-    <rect x="550" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
-    <rect x="550" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
-    <rect x="702" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
-  </g>
-  <g>
-    <rect x="844" y="632" width="328" height="52" rx="20" fill="url(#card)"/>
-    <circle cx="888" cy="658" r="18" fill="#F06B44"/>
-    <rect x="920" y="648" width="136" height="12" rx="6" fill="#FFF1E4"/>
-    <rect x="920" y="668" width="96" height="10" rx="5" fill="#917A6F"/>
-    <rect x="1072" y="646" width="78" height="22" rx="11" fill="#3A261D"/>
+
+  <polygon points="94,94 1016,62 1060,96 138,128" fill="url(#homeTop)"/>
+  <polygon points="1060,96 1132,608 1176,574 1104,62" fill="url(#homeSide)"/>
+  <polygon points="138,128 1060,96 1132,608 210,640" fill="url(#homeFront)" stroke="#F2B37C" stroke-opacity="0.22" stroke-width="2"/>
+
+  <g clip-path="url(#homeScreenClip)" transform="translate(28 14) skewX(-6)">
+    <rect x="162" y="118" width="878" height="42" rx="18" fill="#211411"/>
+    <circle cx="192" cy="139" r="6" fill="#FF7C60"/>
+    <circle cx="214" cy="139" r="6" fill="#FFB54E"/>
+    <circle cx="236" cy="139" r="6" fill="#5FD38D"/>
+    <text x="286" y="146" fill="#FFF2E6" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Fein Home</text>
+    <rect x="760" y="127" width="76" height="22" rx="11" fill="#3E271D"/>
+    <rect x="850" y="127" width="76" height="22" rx="11" fill="#3E271D"/>
+    <rect x="940" y="127" width="110" height="22" rx="11" fill="#F48A45"/>
+
+    <rect x="182" y="182" width="388" height="358" rx="34" fill="url(#heroCard)"/>
+    <text x="212" y="226" fill="#FFC996" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">FAST FOOD EXPERIENCE</text>
+    <text x="212" y="290" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800">Fresh flavor</text>
+    <text x="212" y="348" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800">with a 3D</text>
+    <text x="212" y="406" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800">hero landing</text>
+    <rect x="212" y="432" width="286" height="14" rx="7" fill="#836C60"/>
+    <rect x="212" y="458" width="314" height="14" rx="7" fill="#836C60"/>
+    <rect x="212" y="484" width="248" height="14" rx="7" fill="#836C60"/>
+    <g filter="url(#shadowSm)">
+      <rect x="212" y="520" width="184" height="52" rx="26" fill="url(#cta)"/>
+    </g>
+    <text x="254" y="553" fill="#1B120E" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="800">Order Online</text>
+
+    <rect x="610" y="182" width="388" height="358" rx="34" fill="url(#showcase)"/>
+    <circle cx="816" cy="306" r="148" fill="url(#burgerAura)"/>
+    <ellipse cx="824" cy="424" rx="122" ry="28" fill="#120C0A" fill-opacity="0.56"/>
+    <ellipse cx="824" cy="382" rx="120" ry="30" fill="#4B2A1D"/>
+    <ellipse cx="824" cy="350" rx="116" ry="24" fill="#8A5733"/>
+    <ellipse cx="824" cy="330" rx="108" ry="22" fill="#6E2E1F"/>
+    <ellipse cx="824" cy="304" rx="124" ry="34" fill="#FFC873"/>
+    <ellipse cx="824" cy="276" rx="102" ry="18" fill="#7EC764"/>
+    <ellipse cx="824" cy="252" rx="114" ry="24" fill="#E56E35"/>
+    <ellipse cx="824" cy="224" rx="124" ry="38" fill="#C07A3A"/>
+    <g filter="url(#shadowSm)" transform="rotate(-8 950 256)">
+      <rect x="920" y="188" width="110" height="94" rx="24" fill="#251713" stroke="#FFB66C" stroke-opacity="0.44"/>
+      <text x="946" y="224" fill="#FFD7B0" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Deals</text>
+      <text x="938" y="256" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">20% Off</text>
+    </g>
+    <g filter="url(#shadowSm)" transform="rotate(6 938 376)">
+      <rect x="904" y="314" width="118" height="110" rx="26" fill="#251713" stroke="#FFB66C" stroke-opacity="0.42"/>
+      <text x="930" y="354" fill="#FFD7B0" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Items</text>
+      <text x="942" y="392" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">09</text>
+    </g>
+
+    <g filter="url(#shadowSm)">
+      <rect x="184" y="566" width="250" height="60" rx="24" fill="url(#miniCard)"/>
+      <circle cx="220" cy="596" r="16" fill="#F48A45"/>
+      <rect x="248" y="586" width="108" height="12" rx="6" fill="#FFF1E4"/>
+      <rect x="248" y="606" width="78" height="10" rx="5" fill="#927B70"/>
+      <rect x="358" y="582" width="54" height="22" rx="11" fill="#3A261D"/>
+    </g>
+    <g filter="url(#shadowSm)">
+      <rect x="460" y="566" width="250" height="60" rx="24" fill="url(#miniCard)"/>
+      <circle cx="496" cy="596" r="16" fill="#F6B86D"/>
+      <rect x="524" y="586" width="108" height="12" rx="6" fill="#FFF1E4"/>
+      <rect x="524" y="606" width="78" height="10" rx="5" fill="#927B70"/>
+      <rect x="634" y="582" width="54" height="22" rx="11" fill="#3A261D"/>
+    </g>
+    <g filter="url(#shadowSm)">
+      <rect x="736" y="566" width="250" height="60" rx="24" fill="url(#miniCard)"/>
+      <circle cx="772" cy="596" r="16" fill="#F06B44"/>
+      <rect x="800" y="586" width="108" height="12" rx="6" fill="#FFF1E4"/>
+      <rect x="800" y="606" width="78" height="10" rx="5" fill="#927B70"/>
+      <rect x="910" y="582" width="54" height="22" rx="11" fill="#3A261D"/>
+    </g>
   </g>
 </svg>

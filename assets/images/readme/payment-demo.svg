@@ -1,91 +1,143 @@
 <svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="payBg" x1="74" y1="48" x2="1196" y2="706" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#120C0B"/>
-      <stop offset="0.55" stop-color="#1B1311"/>
-      <stop offset="1" stop-color="#10181B"/>
+    <linearGradient id="payBg" x1="74" y1="44" x2="1194" y2="708" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#110C0B"/>
+      <stop offset="0.54" stop-color="#1A1311"/>
+      <stop offset="1" stop-color="#101B20"/>
     </linearGradient>
-    <linearGradient id="chip" x1="834" y1="134" x2="1100" y2="230" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F48A45"/>
-      <stop offset="1" stop-color="#EA6748"/>
+    <linearGradient id="payFront" x1="164" y1="124" x2="1112" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#201614"/>
+      <stop offset="1" stop-color="#111214"/>
     </linearGradient>
-    <linearGradient id="summary" x1="886" y1="226" x2="1146" y2="604" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1A2730"/>
-      <stop offset="1" stop-color="#111A20"/>
+    <linearGradient id="payTop" x1="108" y1="96" x2="1046" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D302C"/>
+      <stop offset="1" stop-color="#191719"/>
     </linearGradient>
+    <linearGradient id="paySide" x1="1078" y1="96" x2="1166" y2="582" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#253038"/>
+      <stop offset="1" stop-color="#0D1114"/>
+    </linearGradient>
+    <linearGradient id="stepAccent" x1="748" y1="242" x2="918" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC27A"/>
+      <stop offset="1" stop-color="#F0724A"/>
+    </linearGradient>
+    <linearGradient id="summaryPanel" x1="704" y1="244" x2="1078" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B2730"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="850" y1="128" x2="1080" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB76A"/>
+      <stop offset="0.46" stop-color="#EA6C4A"/>
+      <stop offset="1" stop-color="#6C5BFF"/>
+    </linearGradient>
+    <filter id="payShadowLg" x="0" y="0" width="1280" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="30"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.02 0 0 0 0 0.03 0 0 0 0.46 0"/>
+    </filter>
+    <filter id="payShadowSm" x="0" y="0" width="1280" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.03 0 0 0 0 0.03 0 0 0 0 0.03 0 0 0 0.34 0"/>
+    </filter>
+    <clipPath id="payScreenClip">
+      <polygon points="138,128 1062,96 1136,610 212,642"/>
+    </clipPath>
   </defs>
+
   <rect width="1280" height="760" rx="34" fill="url(#payBg)"/>
-  <circle cx="228" cy="140" r="110" fill="#F48A45" fill-opacity="0.14"/>
-  <circle cx="1108" cy="632" r="132" fill="#52C2C7" fill-opacity="0.12"/>
-  <rect x="54" y="42" width="1172" height="676" rx="28" fill="#171211" stroke="#7FE2E2" stroke-opacity="0.24" stroke-width="2"/>
-  <rect x="54" y="42" width="1172" height="54" rx="28" fill="#201716"/>
-  <circle cx="92" cy="69" r="7" fill="#FF7C60"/>
-  <circle cx="116" cy="69" r="7" fill="#FFB54E"/>
-  <circle cx="140" cy="69" r="7" fill="#5FD38D"/>
-  <text x="184" y="76" fill="#FFF1E4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Fein Checkout</text>
-  <rect x="774" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
-  <rect x="876" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
-  <rect x="978" y="57" width="86" height="24" rx="12" fill="#2D2422"/>
-  <rect x="1080" y="57" width="102" height="24" rx="12" fill="#F48A45"/>
-  <text x="106" y="154" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">FEIN CHECKOUT STUDIO</text>
-  <text x="106" y="220" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Review the cart,</text>
-  <text x="106" y="278" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">set delivery,</text>
-  <text x="106" y="336" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">and confirm payment</text>
-  <rect x="106" y="374" width="356" height="14" rx="7" fill="#7A6457"/>
-  <rect x="106" y="402" width="390" height="14" rx="7" fill="#7A6457"/>
-  <rect x="106" y="430" width="310" height="14" rx="7" fill="#7A6457"/>
-  <g>
-    <rect x="680" y="126" width="102" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
-    <text x="710" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cart</text>
-    <rect x="794" y="126" width="118" height="38" rx="19" fill="url(#chip)"/>
-    <text x="822" y="151" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Delivery</text>
-    <rect x="924" y="126" width="110" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
-    <text x="952" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Payment</text>
-    <rect x="1046" y="126" width="126" height="38" rx="19" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.38"/>
-    <text x="1070" y="151" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Confirm</text>
+  <circle cx="218" cy="126" r="116" fill="#F48A45" fill-opacity="0.15"/>
+  <circle cx="1112" cy="620" r="142" fill="#52C2C7" fill-opacity="0.12"/>
+  <ellipse cx="698" cy="668" rx="468" ry="58" fill="#08090B" fill-opacity="0.32"/>
+
+  <g filter="url(#payShadowLg)">
+    <polygon points="182,170 1106,138 1180,652 256,684" fill="#0D0D0F" fill-opacity="0.84"/>
   </g>
-  <rect x="106" y="488" width="514" height="176" rx="26" fill="#1B1514" stroke="#2F2522"/>
-  <text x="136" y="530" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Contact details</text>
-  <g>
-    <rect x="136" y="552" width="214" height="38" rx="12" fill="#261E1C"/>
-    <rect x="368" y="552" width="214" height="38" rx="12" fill="#261E1C"/>
-    <rect x="136" y="606" width="214" height="38" rx="12" fill="#261E1C"/>
-    <rect x="368" y="606" width="214" height="38" rx="12" fill="#261E1C"/>
+
+  <polygon points="94,94 1018,62 1062,96 138,128" fill="url(#payTop)"/>
+  <polygon points="1062,96 1136,610 1180,576 1106,62" fill="url(#paySide)"/>
+  <polygon points="138,128 1062,96 1136,610 212,642" fill="url(#payFront)" stroke="#8DE2E5" stroke-opacity="0.2" stroke-width="2"/>
+
+  <g clip-path="url(#payScreenClip)" transform="translate(28 14) skewX(-6)">
+    <rect x="164" y="118" width="884" height="42" rx="18" fill="#1C1616"/>
+    <circle cx="194" cy="139" r="6" fill="#FF7C60"/>
+    <circle cx="216" cy="139" r="6" fill="#FFB54E"/>
+    <circle cx="238" cy="139" r="6" fill="#5FD38D"/>
+    <text x="286" y="146" fill="#FFF2E6" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Fein Checkout</text>
+    <rect x="744" y="127" width="84" height="22" rx="11" fill="#2E2829"/>
+    <rect x="840" y="127" width="84" height="22" rx="11" fill="#2E2829"/>
+    <rect x="936" y="127" width="114" height="22" rx="11" fill="#F48A45"/>
+
+    <text x="184" y="220" fill="#FFD0A3" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">FEIN CHECKOUT STUDIO</text>
+    <text x="184" y="282" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="800">Review cart,</text>
+    <text x="184" y="338" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="800">set delivery,</text>
+    <text x="184" y="394" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="800">confirm payment</text>
+    <rect x="184" y="424" width="296" height="12" rx="6" fill="#7B6760"/>
+    <rect x="184" y="448" width="332" height="12" rx="6" fill="#7B6760"/>
+    <rect x="184" y="472" width="250" height="12" rx="6" fill="#7B6760"/>
+
+    <g filter="url(#payShadowSm)">
+      <rect x="650" y="192" width="96" height="36" rx="18" fill="#1D2A31" stroke="#6CCFD3" stroke-opacity="0.3"/>
+      <text x="678" y="216" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Cart</text>
+      <rect x="760" y="192" width="116" height="36" rx="18" fill="url(#stepAccent)"/>
+      <text x="788" y="216" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">Delivery</text>
+      <rect x="890" y="192" width="108" height="36" rx="18" fill="#1D2A31" stroke="#6CCFD3" stroke-opacity="0.3"/>
+      <text x="918" y="216" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Payment</text>
+    </g>
+
+    <rect x="184" y="512" width="402" height="126" rx="28" fill="#1B1514" stroke="#2F2522"/>
+    <text x="214" y="552" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Contact details</text>
+    <rect x="214" y="572" width="154" height="36" rx="12" fill="#26201E"/>
+    <rect x="386" y="572" width="170" height="36" rx="12" fill="#26201E"/>
+    <rect x="214" y="620" width="154" height="36" rx="12" fill="#26201E"/>
+    <rect x="386" y="620" width="170" height="36" rx="12" fill="#26201E"/>
+
+    <rect x="648" y="246" width="374" height="392" rx="30" fill="url(#summaryPanel)" stroke="#66CED2" stroke-opacity="0.24"/>
+    <text x="680" y="288" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Order summary</text>
+    <text x="680" y="316" fill="#A9BBC5" font-family="Segoe UI, Arial, sans-serif" font-size="17">Promo rules, delivery speed, and payment state</text>
+
+    <g filter="url(#payShadowSm)">
+      <rect x="680" y="340" width="308" height="70" rx="22" fill="#182127"/>
+      <rect x="706" y="360" width="126" height="12" rx="6" fill="#FFF1E4"/>
+      <rect x="706" y="382" width="94" height="10" rx="5" fill="#81949E"/>
+      <rect x="902" y="358" width="64" height="28" rx="14" fill="#F48A45"/>
+    </g>
+
+    <g filter="url(#payShadowSm)">
+      <rect x="680" y="430" width="144" height="82" rx="24" fill="#182127"/>
+      <text x="704" y="466" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Promo</text>
+      <rect x="704" y="478" width="92" height="10" rx="5" fill="#81949E"/>
+    </g>
+    <g filter="url(#payShadowSm)">
+      <rect x="844" y="430" width="144" height="82" rx="24" fill="#182127"/>
+      <text x="868" y="466" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Delivery</text>
+      <rect x="868" y="478" width="92" height="10" rx="5" fill="#81949E"/>
+    </g>
+
+    <g filter="url(#payShadowSm)">
+      <rect x="680" y="534" width="96" height="82" rx="22" fill="#1F2B31" stroke="#66CED2" stroke-opacity="0.36"/>
+      <text x="708" y="568" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Card</text>
+      <rect x="706" y="582" width="44" height="10" rx="5" fill="#7BCDD1"/>
+    </g>
+    <rect x="792" y="534" width="96" height="82" rx="22" fill="#1A1514"/>
+    <text x="814" y="568" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Mobile</text>
+    <rect x="818" y="582" width="44" height="10" rx="5" fill="#7A8A92"/>
+    <rect x="904" y="534" width="96" height="82" rx="22" fill="#1A1514"/>
+    <text x="936" y="568" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Cash</text>
+    <rect x="930" y="582" width="44" height="10" rx="5" fill="#7A8A92"/>
+
+    <g filter="url(#payShadowSm)">
+      <rect x="680" y="640" width="320" height="46" rx="23" fill="#F48A45"/>
+    </g>
+    <text x="780" y="670" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Confirm Payment</text>
   </g>
-  <rect x="656" y="208" width="486" height="456" rx="28" fill="url(#summary)" stroke="#64C9CE" stroke-opacity="0.28"/>
-  <text x="692" y="254" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Order summary</text>
-  <text x="692" y="286" fill="#A8BBC4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Live totals, promo logic, and payment method selection</text>
-  <g>
-    <rect x="692" y="318" width="414" height="74" rx="20" fill="#182127"/>
-    <rect x="718" y="338" width="152" height="14" rx="7" fill="#FFF1E4"/>
-    <rect x="718" y="362" width="120" height="12" rx="6" fill="#81949E"/>
-    <rect x="980" y="340" width="102" height="30" rx="15" fill="#F48A45"/>
+
+  <g filter="url(#payShadowLg)" transform="rotate(-10 978 214)">
+    <rect x="850" y="138" width="218" height="138" rx="28" fill="url(#cardGradient)"/>
+    <rect x="872" y="166" width="42" height="30" rx="8" fill="#F6D6A2" fill-opacity="0.78"/>
+    <circle cx="1018" cy="198" r="28" fill="#FFF5ED" fill-opacity="0.28"/>
+    <circle cx="1040" cy="198" r="28" fill="#FFF5ED" fill-opacity="0.18"/>
+    <rect x="872" y="222" width="104" height="10" rx="5" fill="#FFF5ED" fill-opacity="0.78"/>
+    <rect x="872" y="242" width="68" height="8" rx="4" fill="#FFF5ED" fill-opacity="0.46"/>
   </g>
-  <g>
-    <rect x="692" y="410" width="194" height="88" rx="22" fill="#182127"/>
-    <text x="718" y="448" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Promo code</text>
-    <rect x="718" y="462" width="138" height="12" rx="6" fill="#81949E"/>
-  </g>
-  <g>
-    <rect x="912" y="410" width="194" height="88" rx="22" fill="#182127"/>
-    <text x="938" y="448" fill="#BEECEF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Delivery speed</text>
-    <rect x="938" y="462" width="138" height="12" rx="6" fill="#81949E"/>
-  </g>
-  <g>
-    <rect x="692" y="522" width="126" height="94" rx="22" fill="#1F2B31" stroke="#64C9CE" stroke-opacity="0.42"/>
-    <text x="726" y="558" fill="#D7FFFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Card</text>
-    <rect x="722" y="574" width="68" height="10" rx="5" fill="#7BCDD1"/>
-  </g>
-  <g>
-    <rect x="836" y="522" width="126" height="94" rx="22" fill="#1B1514"/>
-    <text x="860" y="558" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Mobile</text>
-    <rect x="864" y="574" width="72" height="10" rx="5" fill="#7A8A92"/>
-  </g>
-  <g>
-    <rect x="980" y="522" width="126" height="94" rx="22" fill="#1B1514"/>
-    <text x="1018" y="558" fill="#FFF8F2" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Cash</text>
-    <rect x="1006" y="574" width="74" height="10" rx="5" fill="#7A8A92"/>
-  </g>
-  <rect x="692" y="630" width="414" height="48" rx="24" fill="#F48A45"/>
-  <text x="822" y="661" fill="#160F0D" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">Confirm Payment</text>
 </svg>
