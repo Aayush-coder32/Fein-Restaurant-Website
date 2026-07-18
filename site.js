@@ -18,7 +18,7 @@
 
     const readCart = () => {
         try {
-vgvvvconst parsed = JSON.parse(window.localStorage.getItem(CART_KEY) || "[]");
+const parsed = JSON.parse(window.localStorage.getItem(CART_KEY) || "[]");
             return Array.isArray(parsed) ? parsed : [];
         } catch {
             return [];
