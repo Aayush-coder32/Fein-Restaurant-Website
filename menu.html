@@ -11,6 +11,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/05dfd329a2.js" crossorigin="anonymous"></script>
     <script src="site.js" defer></script>
+    <script src="menu-explorer.js" defer></script>
     <link rel="stylesheet" href="css2.css">
     <title>Fein - Menu</title>
 </head>
@@ -168,139 +169,212 @@
                 <li>Drinks<i class="fa-solid fa-martini-glass"></i></li>
             </ul>
         </div>
+        <section class="menu-explorer" aria-labelledby="menu-explorer-title">
+            <div class="menu-explorer-head">
+                <div class="menu-explorer-copy">
+                    <p class="menu-eyebrow">Smart Menu Explorer</p>
+                    <h2 id="menu-explorer-title">Build your perfect Fein order faster</h2>
+                    <p>Search dishes instantly, compare price ranges, switch category focus, and add favorites straight
+                        into the shared cart flow.</p>
+                </div>
+                <div class="menu-signal-board" aria-label="Live menu insights">
+                    <article class="menu-signal-card">
+                        <span>Live items</span>
+                        <strong id="menu-total-items">0 dishes</strong>
+                    </article>
+                    <article class="menu-signal-card">
+                        <span>Average spend</span>
+                        <strong id="menu-average-price">0 RWF</strong>
+                    </article>
+                    <article class="menu-signal-card">
+                        <span>Budget pick</span>
+                        <strong id="menu-budget-pick">Loading...</strong>
+                    </article>
+                    <article class="menu-signal-card">
+                        <span>Spotlight</span>
+                        <strong id="menu-active-spotlight">Full menu view</strong>
+                    </article>
+                </div>
+            </div>
+            <div class="menu-toolbar">
+                <label class="menu-field menu-search-field" for="menu-search">
+                    <span>Search dishes</span>
+                    <div class="menu-input-shell">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" id="menu-search" placeholder="Try pizza, chicken, juice..." autocomplete="off">
+                    </div>
+                </label>
+                <label class="menu-field" for="menu-budget">
+                    <span>Budget range</span>
+                    <select id="menu-budget">
+                        <option value="all">Any budget</option>
+                        <option value="under-2000">Under 2,000 RWF</option>
+                        <option value="2000-3500">2,000 - 3,500 RWF</option>
+                        <option value="3500-plus">3,500+ RWF</option>
+                    </select>
+                </label>
+                <label class="menu-field" for="menu-sort">
+                    <span>Sort menu</span>
+                    <select id="menu-sort">
+                        <option value="featured">Featured first</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </label>
+            </div>
+            <div class="menu-category-pills" id="menu-category-pills" aria-label="Filter by menu category"></div>
+            <div class="menu-results-bar">
+                <p id="menu-results-copy" aria-live="polite">Loading menu insights...</p>
+                <button type="button" id="menu-clear-filters" class="menu-clear-button" hidden>Reset filters</button>
+            </div>
+            <div class="menu-grid" id="menu-grid"></div>
+            <div class="menu-empty-state" id="menu-empty-state" hidden>
+                <h3>No dishes match this filter set</h3>
+                <p>Try another keyword, switch the category, or widen your price range to explore more options.</p>
+            </div>
+        </section>
         <div class="menuTable">
-            <h2>Our menu table</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="righter">CATEGORY</th>
-                        <th>FOOD NAME</th>
-                        <th>DESCRIPTION</th>
-                        <th>PRICE (<span>RWF</span>) </th>
-                        <th class="sider">Add to Cart</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="righter" rowspan="4"><i class="fa-solid fa-drumstick-bite"></i></td>
-                        <td>Grilled Chicken</td>
-                        <td>Half chicken, lightly spiced</td>
-                        <td>4 200</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Fried Chicken Wings</td>
-                        <td>Crispy fried Wings</td>
-                        <td>3 800</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Nuggets</td>
-                        <td>Bite-sized fried chicken pieces</td>
-                        <td>3 200</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Spicy Chicken Drumsticks</td>
-                        <td>Drumsticks with spicy sauce</td>
-                        <td>3 900</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td class="righter" rowspan="4"><i class="fa-solid fa-cookie-bite"></i></td>
-                        <td>French fries</td>
-                        <td>Crispy Golden fries</td>
-                        <td>2 000</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Onion rings</td>
-                        <td>Deep Fried onion rings</td>
-                        <td>2 000</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Mozzarella Sticks</td>
-                        <td>Cheese sticks, lightly fried</td>
-                        <td>2 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Garlic Bread</td>
-                        <td>Toasted bread with Garlic butter</td>
-                        <td>1 800</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td class="righter" rowspan="4"><i class="fa-solid fa-pizza-slice"></i></td>
-                        <td>Margherita Pizza</td>
-                        <td>Tomato, mozzarella, basil</td>
-                        <td>3 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Ramen Noodles</td>
-                        <td>Well prepared Ramen with Ketchup</td>
-                        <td>1 900</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Pepperoni Pizza</td>
-                        <td>Cheese & spicy pepperoni</td>
-                        <td>4 000</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Wrap</td>
-                        <td>Grilled chicken, veggies and sauce</td>
-                        <td>3 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td class="righter" rowspan="7"><i class="fa-solid fa-martini-glass"></i></td>
-                        <td>Orange Juice</td>
-                        <td>Freshly squeezed</td>
-                        <td>1 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>Sweet & Tangy</td>
-                        <td>1 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Mineral Water</td>
-                        <td>Bottled Water</td>
-                        <td>800</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>Refreshing cold tea</td>
-                        <td>1 200</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Milkshake<br>(Chocolate/Vanilla/Strawberry)</td>
-                        <td>Thick & Creamy milkshake</td>
-                        <td>2 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Soda Float</td>
-                        <td>Soda with ice</td>
-                        <td>2 000</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                    <tr>
-                        <td>Fruit Salad</td>
-                        <td>Fresh fruit mix</td>
-                        <td>2 500</td>
-                        <td class="sider"><button class="orderOnline">Add</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="menu-reference-head">
+                <div>
+                    <p class="menu-eyebrow">Reference Table</p>
+                    <h2>Full menu price table</h2>
+                </div>
+                <p>Prefer a classic table view? The original menu remains below for quick scanning and bulk comparison.</p>
+            </div>
+            <div class="menu-table-shell">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="righter">CATEGORY</th>
+                            <th>FOOD NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>PRICE (<span>RWF</span>) </th>
+                            <th class="sider">Add to Cart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="righter" rowspan="4"><i class="fa-solid fa-drumstick-bite"></i></td>
+                            <td>Grilled Chicken</td>
+                            <td>Half chicken, lightly spiced</td>
+                            <td>4 200</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Fried Chicken Wings</td>
+                            <td>Crispy fried Wings</td>
+                            <td>3 800</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Nuggets</td>
+                            <td>Bite-sized fried chicken pieces</td>
+                            <td>3 200</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Spicy Chicken Drumsticks</td>
+                            <td>Drumsticks with spicy sauce</td>
+                            <td>3 900</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td class="righter" rowspan="4"><i class="fa-solid fa-cookie-bite"></i></td>
+                            <td>French fries</td>
+                            <td>Crispy Golden fries</td>
+                            <td>2 000</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Onion rings</td>
+                            <td>Deep Fried onion rings</td>
+                            <td>2 000</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mozzarella Sticks</td>
+                            <td>Cheese sticks, lightly fried</td>
+                            <td>2 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Garlic Bread</td>
+                            <td>Toasted bread with Garlic butter</td>
+                            <td>1 800</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td class="righter" rowspan="4"><i class="fa-solid fa-pizza-slice"></i></td>
+                            <td>Margherita Pizza</td>
+                            <td>Tomato, mozzarella, basil</td>
+                            <td>3 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ramen Noodles</td>
+                            <td>Well prepared Ramen with Ketchup</td>
+                            <td>1 900</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pepperoni Pizza</td>
+                            <td>Cheese & spicy pepperoni</td>
+                            <td>4 000</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Wrap</td>
+                            <td>Grilled chicken, veggies and sauce</td>
+                            <td>3 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td class="righter" rowspan="7"><i class="fa-solid fa-martini-glass"></i></td>
+                            <td>Orange Juice</td>
+                            <td>Freshly squeezed</td>
+                            <td>1 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>Sweet & Tangy</td>
+                            <td>1 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mineral Water</td>
+                            <td>Bottled Water</td>
+                            <td>800</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>Refreshing cold tea</td>
+                            <td>1 200</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Milkshake<br>(Chocolate/Vanilla/Strawberry)</td>
+                            <td>Thick & Creamy milkshake</td>
+                            <td>2 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Soda Float</td>
+                            <td>Soda with ice</td>
+                            <td>2 000</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Fruit Salad</td>
+                            <td>Fresh fruit mix</td>
+                            <td>2 500</td>
+                            <td class="sider"><button class="orderOnline">Add</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="today">
             <h2>Today at Fein</h2>

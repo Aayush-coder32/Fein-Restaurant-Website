@@ -18,7 +18,7 @@
 
     const readCart = () => {
         try {
-            const parsed = JSON.parse(window.localStorage.getItem(CART_KEY) || "[]");
+vgvvvconst parsed = JSON.parse(window.localStorage.getItem(CART_KEY) || "[]");
             return Array.isArray(parsed) ? parsed : [];
         } catch {
             return [];
@@ -153,7 +153,7 @@
 
     const openMenu = (message) => {
         if (isCurrentPage(MENU_PAGE)) {
-            document.querySelector(".menuTable")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            document.querySelector(".menu-explorer, .menuTable")?.scrollIntoView({ behavior: "smooth", block: "start" });
             if (message) {
                 showToast(message);
             }
@@ -187,6 +187,19 @@
         return {
             name: normalizeText(cells[1].textContent || ""),
             price: `${normalizeText(cells[3].textContent || "")} RWF`
+        };
+    };
+
+    const getExplorerItem = (button) => {
+        const card = button.closest("[data-menu-card]");
+
+        if (!card) {
+            return null;
+        }
+
+        return {
+            name: normalizeText(card.getAttribute("data-item-name") || button.getAttribute("data-name") || ""),
+            price: normalizeText(card.getAttribute("data-item-price") || button.getAttribute("data-price") || "")
         };
     };
 
@@ -289,57 +302,63 @@
     };
 
     const bindOrderControls = () => {
-        const controls = document.querySelectorAll(".orderOnline, .item button");
+        document.addEventListener("click", (event) => {
+            if (!(event.target instanceof Element)) {
+                return;
+            }
 
-        controls.forEach((control) => {
-            control.addEventListener("click", (event) => {
-                const target = event.currentTarget;
+            const target = event.target.closest(".orderOnline, .item button, [data-menu-add]");
 
-                if (!(target instanceof HTMLElement)) {
-                    return;
-                }
+            if (!(target instanceof HTMLElement)) {
+                return;
+            }
 
-                const label = normalizeText(target.textContent || "").toLowerCase();
+            const label = normalizeText(target.textContent || "").toLowerCase();
 
-                if (target.matches("a")) {
-                    event.preventDefault();
-                }
-
-                if (target.closest(".menuTable")) {
-                    event.preventDefault();
-                    addCartItem(getMenuRowItem(target));
-                    return;
-                }
-
-                if (target.closest(".comboCont")) {
-                    event.preventDefault();
-                    addCartItem(getComboItem(target));
-                    return;
-                }
-
-                if (target.closest(".item")) {
-                    event.preventDefault();
-                    const item = getHomeItem(target);
-                    addAndCheckout(item, `${item?.name || "Your order"} is ready for payment.`);
-                    return;
-                }
-
-                if (target.closest(".underStarter, .underStarter2")) {
-                    event.preventDefault();
-                    const item = getOfferItem(target);
-                    addAndCheckout(item, `${item.name} moved to checkout.`);
-                    return;
-                }
-
-                if (target.closest(".button") || label.includes("order online") || label.includes("place an order")) {
-                    event.preventDefault();
-                    openPayment("Checkout opened. Review your basket and payment details.");
-                    return;
-                }
-
+            if (target.matches("a")) {
                 event.preventDefault();
-                openPayment("Review your order and complete payment.");
-            });
+            }
+
+            if (target.closest("[data-menu-card]")) {
+                event.preventDefault();
+                addCartItem(getExplorerItem(target));
+                return;
+            }
+
+            if (target.closest(".menuTable")) {
+                event.preventDefault();
+                addCartItem(getMenuRowItem(target));
+                return;
+            }
+
+            if (target.closest(".comboCont")) {
+                event.preventDefault();
+                addCartItem(getComboItem(target));
+                return;
+            }
+
+            if (target.closest(".item")) {
+                event.preventDefault();
+                const item = getHomeItem(target);
+                addAndCheckout(item, `${item?.name || "Your order"} is ready for payment.`);
+                return;
+            }
+
+            if (target.closest(".underStarter, .underStarter2")) {
+                event.preventDefault();
+                const item = getOfferItem(target);
+                addAndCheckout(item, `${item.name} moved to checkout.`);
+                return;
+            }
+
+            if (target.closest(".button") || label.includes("order online") || label.includes("place an order")) {
+                event.preventDefault();
+                openPayment("Checkout opened. Review your basket and payment details.");
+                return;
+            }
+
+            event.preventDefault();
+            openPayment("Review your order and complete payment.");
         });
     };
 
