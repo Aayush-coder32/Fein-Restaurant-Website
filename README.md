@@ -27,10 +27,6 @@ The project is intentionally lightweight: there is no build pipeline, no package
 - Table booking form connected to Web3Forms without a backend
 - Static-site friendly structure that can be deployed to any HTML host
 
-## Author
-
-Aayush Sharma
-
 ## Tech Stack
 
 - HTML5
@@ -229,3 +225,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
   <img src="assets/images/o1.jpg" alt="Burger offer image" width="32%" />
   <img src="assets/images/o2.jpg" alt="Pizza offer image" width="32%" />
 </p>
+
+## Author
+
+Aayush Sharma
