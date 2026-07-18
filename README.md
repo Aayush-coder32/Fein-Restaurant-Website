@@ -1,31 +1,45 @@
 # Fein Restaurant Website
 
-Fein is a static multi-page restaurant website built with plain HTML, CSS, and JavaScript. It includes a landing page, about page, menu, booking form, contact page, and an advanced demo checkout/payment flow.
+Fein is a static multi-page restaurant website built with plain HTML, CSS, and JavaScript. It includes a landing experience, menu browsing, table booking, contact details, and a client-side checkout demo that keeps the cart in `localStorage`.
 
-## Demo Images
+## Preview
 
 <table>
   <tr>
-    <td width="33.33%"><img src="assets/images/readme/home-demo.svg" alt="Fein home page demo preview" /></td>
-    <td width="33.33%"><img src="assets/images/readme/menu-demo.svg" alt="Fein menu page demo preview" /></td>
-    <td width="33.33%"><img src="assets/images/readme/payment-demo.svg" alt="Fein payment page demo preview" /></td>
+    <td width="33.33%"><img src="assets/images/readme/home-demo.svg" alt="Fein home page preview" /></td>
+    <td width="33.33%"><img src="assets/images/readme/menu-demo.svg" alt="Fein menu page preview" /></td>
+    <td width="33.33%"><img src="assets/images/readme/payment-demo.svg" alt="Fein payment page preview" /></td>
   </tr>
   <tr>
-    <td align="center"><strong>Home Page</strong><br>Hero banner, offers, and featured items</td>
-    <td align="center"><strong>Menu Page</strong><br>Category list, menu table, and cart actions</td>
-    <td align="center"><strong>Payment Page</strong><br>Checkout flow, delivery setup, and payment summary</td>
+    <td align="center"><strong>Home</strong><br>Hero section, featured meals, offers, and testimonials</td>
+    <td align="center"><strong>Menu</strong><br>Menu table, quick ordering, and cart actions</td>
+    <td align="center"><strong>Checkout</strong><br>Delivery setup, promo codes, and payment demo</td>
   </tr>
 </table>
 
-## Pictorial Images
+## Tech Stack
 
-<p align="center">
-  <img src="assets/images/main.jpg" alt="Signature burger and fries" width="32%" />
-  <img src="assets/images/o1.jpg" alt="Close-up burger offer image" width="32%" />
-  <img src="assets/images/o2.jpg" alt="Fresh pizza slice and toppings" width="32%" />
-</p>
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Browser `localStorage` for cart persistence
+- Web3Forms for the table booking form
 
-## Flow Diagram
+## Key Features
+
+- Multi-page restaurant site with a dedicated page for each core section
+- Shared cart flow between `home.html`, `menu.html`, and `payment.html`
+- Checkout demo with:
+  - quantity updates
+  - delivery speed selection
+  - promo codes
+  - tax and service fee calculation
+  - card, mobile money, and cash-on-delivery UI states
+- Table booking form connected to Web3Forms
+- Responsive navigation with mobile menu toggle
+- Visual assets organized under `assets/images/`
+
+## Page Map
 
 ```mermaid
 flowchart TD
@@ -34,71 +48,72 @@ flowchart TD
     B --> D[menu.html]
     B --> E[booky.html]
     B --> F[contact.html]
-    B -->|Hero CTAs and featured items| G[(localStorage cart)]
-    C -->|Place an order| H[payment.html]
-    D -->|Add to cart| G
-    G --> H
-    H -->|Add more items| D
-    E --> I[Web3Forms booking submission]
+    B --> G[payment.html]
+    D --> G
+    C --> G
+    B -->|Add to cart| H[(localStorage: fein-cart)]
+    D -->|Add to cart| H
+    H --> G
+    E --> I[Web3Forms submission]
 ```
 
 ## Pages
 
-- `index.html`: root entry that redirects to the home page
-- `home.html`: landing page with featured items and testimonials
-- `about.html`: restaurant story, values, and chefs
-- `menu.html`: menu table and cart-building actions
-- `booky.html`: table booking form
-- `contact.html`: contact details, map, video, and location gallery
-- `payment.html`: advanced demo checkout and payment experience
-
-## Features
-
-- Responsive multi-page restaurant layout
-- Shared order/cart flow using `localStorage`
-- Advanced demo checkout with:
-  - live cart summary
-  - promo codes
-  - delivery options
-  - card / mobile money / cash-on-delivery methods
-  - confirmation modals
-- Booking form connected to Web3Forms
-- Centralized images inside `assets/images/`
+| File | Purpose |
+| --- | --- |
+| `index.html` | Redirect entry that sends visitors to `home.html` |
+| `home.html` | Main landing page with featured dishes, offers, and testimonials |
+| `about.html` | Brand story, restaurant intro, and team section |
+| `menu.html` | Full menu table with add-to-cart actions |
+| `booky.html` | Table reservation form |
+| `contact.html` | Contact details, media, and location-focused content |
+| `payment.html` | Demo checkout and payment experience |
 
 ## Project Structure
 
-| Path | Type | Purpose |
-| --- | --- | --- |
-| `assets/images/` | Folder | Stores all project images and visual assets |
-| `index.html` | Page | Root entry that redirects to the home page |
-| `home.html` | Page | Main landing page |
-| `about.html` | Page | Restaurant story, values, and chefs |
-| `menu.html` | Page | Food menu and cart-building actions |
-| `booky.html` | Page | Table booking form |
-| `contact.html` | Page | Contact details, maps, and media section |
-| `payment.html` | Page | Advanced checkout and payment page |
-| `style.css` | Stylesheet | Main styling for the home page |
-| `css2.css` | Stylesheet | Shared styling for inner pages |
-| `payment.css` | Stylesheet | Styling for the checkout/payment experience |
-| `site.js` | Script | Shared cart, navigation, and order flow logic |
-| `payment.js` | Script | Checkout, totals, promo code, and payment interactions |
+| Path | Purpose |
+| --- | --- |
+| `assets/images/` | Photos, illustrations, and README preview assets |
+| `style.css` | Main styling for the home page |
+| `css2.css` | Shared styling for inner pages |
+| `payment.css` | Checkout-specific styling |
+| `site.js` | Shared cart, navigation, toast, and cross-page order flow |
+| `payment.js` | Checkout summary, promo, delivery, and payment interactions |
 
 ## Run Locally
 
-Open the project folder in PowerShell and run:
+This project does not need a build step.
+
+1. Open the project folder in PowerShell.
+2. Start a local server:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Then open:
+3. Open `http://localhost:8000/` in your browser.
 
-```text
-http://localhost:8000/
-```
+You can also open `index.html` directly, but a local server gives more reliable browser behavior during testing.
 
-## Notes
+## Customization
 
-- The checkout in `payment.html` is a demo UI flow, not a real payment gateway.
-- The cart is stored in browser `localStorage`.
-- Remote fonts and Font Awesome require internet access.
+- Update menu items and pricing in `home.html` and `menu.html`
+- Replace the booking form `access_key` in `booky.html` with your own Web3Forms key
+- Adjust promo codes, fees, and tax rules in `payment.js`
+- Swap images inside `assets/images/` to match your own restaurant brand
+- Edit copy, phone number, and email text directly in the HTML pages
+
+## Important Notes
+
+- `payment.html` is a front-end demo checkout, not a real payment gateway integration.
+- Cart data is stored in browser `localStorage` under the `fein-cart` key.
+- Booking submissions depend on Web3Forms and require internet access.
+- Google Fonts and Font Awesome are loaded from external CDNs, so those assets also require internet access.
+
+## Screenshot Assets
+
+<p align="center">
+  <img src="assets/images/main.jpg" alt="Signature burger and fries" width="32%" />
+  <img src="assets/images/o1.jpg" alt="Burger offer image" width="32%" />
+  <img src="assets/images/o2.jpg" alt="Pizza offer image" width="32%" />
+</p>
