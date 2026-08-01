@@ -133,7 +133,7 @@ flowchart TD
 4. `payment.html` reads the saved cart, calculates totals, and validates the selected payment path.
 5. Booking requests from `booky.html` are submitted directly to Web3Forms.
 
-## Pages
+## Pages :
 
 | File | Purpose |
 | --- | --- |
