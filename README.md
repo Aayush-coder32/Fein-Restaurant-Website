@@ -1,4 +1,4 @@
-# Fein Restaurant Website
+# Fein Restaurant Website :
 
 Fein is a static multi-page restaurant front end built with plain HTML, CSS, and JavaScript. It presents a complete restaurant browsing journey with landing content, menu discovery, cart persistence, table booking, contact information, and a polished client-side checkout demo.
 
