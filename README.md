@@ -60,7 +60,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
 - Responsive navigation with mobile menu toggle
 - Visual assets organized under `assets/images/`
 
-## Checkout Demo Rules
+## Checkout Demo Rules :
 
 The checkout experience in `payment.html` is driven by `payment.js` and currently uses these demo values:
 
@@ -74,7 +74,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 | Tax rate | `8%` |
 | Cart storage key | `fein-cart` |
 
-### Promo Codes
+### Promo Codes :
 
 | Code | Effect |
 | --- | --- |
