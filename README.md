@@ -84,7 +84,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 
 ## Client-Side Data Contract
 
-### Persistent Storage Keys
+### Persistent Storage Keys :
 
 | Key | Storage | Purpose |
 | --- | --- | --- |
@@ -107,7 +107,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 
 If you extend the cart logic, keep the `name`, `price`, and `quantity` fields stable unless you also update both scripts.
 
-## Page Map
+## Page Map :
 
 ```mermaid
 flowchart TD
