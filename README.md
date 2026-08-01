@@ -4,7 +4,7 @@ Fein is a static multi-page restaurant front end built with plain HTML, CSS, and
 
 The project is intentionally lightweight: there is no build pipeline, no package manager, and no framework runtime. Everything runs directly in the browser, which makes the codebase simple to host, customize, and hand off.
 
-## Preview
+## Preview :
 
 <table>
   <tr>
@@ -19,7 +19,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
   </tr>
 </table>
 
-## Experience Highlights
+## Experience Highlights :
 
 - Multi-page browsing flow from landing page to menu, booking, and checkout
 - Shared cart state between pages using browser `localStorage`
