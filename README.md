@@ -125,7 +125,7 @@ flowchart TD
     E --> I[Web3Forms submission]
 ```
 
-## User Journey
+## User Journey :
 
 1. Visitors land on `home.html` through the redirect in `index.html`.
 2. They can jump into featured dishes, menu browsing, booking, or direct checkout actions.
