@@ -36,7 +36,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
 - Browser `sessionStorage` for cross-page toast messages
 - Web3Forms for the table booking form
 
-## Architecture Overview
+## Architecture Overview :
 
 | Layer | Responsibility |
 | --- | --- |
