@@ -27,7 +27,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
 - Table booking form connected to Web3Forms without a backend
 - Static-site friendly structure that can be deployed to any HTML host
 
-## Tech Stack :
+## Tech Stack:
 
 - HTML5
 - CSS3
