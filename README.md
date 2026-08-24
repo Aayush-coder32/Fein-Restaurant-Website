@@ -19,7 +19,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
   </tr>
 </table>
 
-## Experience Highlights :
+## Experience Highlights:
 
 - Multi-page browsing flow from landing page to menu, booking, and checkout
 - Shared cart state between pages using browser `localStorage`
