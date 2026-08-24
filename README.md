@@ -82,7 +82,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 | `CRUNCH500` | 500 RWF off orders from 3,000 RWF |
 | `FREESHIP` | Removes the delivery fee |
 
-## Client-Side Data Contract
+## Client-Side Data Contract :
 
 ### Persistent Storage Keys :
 
