@@ -171,7 +171,7 @@ python -m http.server 8000
 
 You can also open `index.html` directly, but a local server gives more reliable browser behavior during testing.
 
-## Deployment Notes
+## Deployment Notes :
 
 - This project can be deployed to GitHub Pages, Netlify, Vercel static hosting, or any standard web server.
 - Because the site is fully static, the deployment output is the repository itself.
