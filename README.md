@@ -156,7 +156,7 @@ flowchart TD
 | `site.js` | Shared cart, navigation, toast, and cross-page order flow |
 | `payment.js` | Checkout summary, promo, delivery, and payment interactions |
 
-## Run Locally
+## Run Locally :
 
 This project does not need a build step.
 
@@ -178,7 +178,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
 - External dependencies such as Google Fonts, Font Awesome, and Web3Forms still require internet access in production.
 - If you deploy under a custom domain or subdirectory, the relative file links will continue to work because navigation is file-based.
 
-## Suggested QA Flow
+## Suggested QA Flow :
 
 1. Open `home.html` and use a featured meal button to confirm it jumps to checkout with an item added.
 2. Open `menu.html` and add several rows to confirm the cart badge updates correctly.
@@ -186,7 +186,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
 4. Switch between `card`, `mobile`, and `cash` payment tabs to confirm validation states.
 5. Submit the booking form on `booky.html` only after replacing the default Web3Forms key with your own.
 
-## Maintenance Notes
+## Maintenance Notes :
 
 - `site.js` reads item names and prices directly from the visible page markup, so major DOM changes can affect cart behavior.
 - The menu page add-to-cart logic depends on table row structure in `menu.html`.
