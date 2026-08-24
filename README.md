@@ -91,7 +91,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 | `fein-cart` | `localStorage` | Persists the checkout basket across pages |
 | `fein-flash` | `sessionStorage` | Queues temporary toast messages during navigation |
 
-### Cart Item Shape
+### Cart Item Shape:
 
 `site.js` and `payment.js` both expect cart items to follow this structure:
 
@@ -145,7 +145,7 @@ flowchart TD
 | `contact.html` | Contact details, media, and location-focused content |
 | `payment.html` | Demo checkout and payment experience |
 
-## Project Structure
+## Project Structure :
 
 | Path | Purpose |
 | --- | --- |
