@@ -194,7 +194,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
 - `payment.js` expects specific form fields and IDs to exist in `payment.html`; renaming those elements requires matching script updates.
 - The checkout flow is demo-only and does not send real payment data to a server.
 
-## Customization
+## Customization:
 
 - Update menu item names and prices in `home.html` and `menu.html`
 - Keep visible menu text accurate because the cart logic reads item names and pricing from the page markup
@@ -203,7 +203,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
 - Swap images inside `assets/images/` to match your own restaurant brand
 - Edit copy, phone number, and email text directly in the HTML pages
 
-## Important Notes
+## Important Notes :
 
 - `payment.html` is a front-end demo checkout, not a real payment gateway integration.
 - Cart data is stored in browser `localStorage` under the `fein-cart` key.
@@ -218,7 +218,7 @@ You can also open `index.html` directly, but a local server gives more reliable 
 - Improve accessibility with stronger focus states, landmark structure, and reduced-motion handling
 - Add analytics or event tracking around booking and checkout interactions
 
-## Screenshot Assets
+## Screenshot Assets :
 
 <p align="center">
   <img src="assets/images/main.jpg" alt="Signature burger and fries" width="32%" />
@@ -226,6 +226,6 @@ You can also open `index.html` directly, but a local server gives more reliable 
   <img src="assets/images/o2.jpg" alt="Pizza offer image" width="32%" />
 </p>
 
-## Author
+## Author :
 
 Aayush Sharma
