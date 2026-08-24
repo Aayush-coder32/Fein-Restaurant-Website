@@ -50,7 +50,7 @@ The project is intentionally lightweight: there is no build pipeline, no package
 | `payment.js` | Checkout totals, promo logic, quantity controls, delivery handling, payment state management, and demo confirmation flow |
 | `assets/images/` | Restaurant imagery and README preview assets |
 
-## Key Features :
+## Key Features:
 
 - Multi-page restaurant site with a dedicated page for each major section
 - Shared cart flow between `home.html`, `menu.html`, and `payment.html`
