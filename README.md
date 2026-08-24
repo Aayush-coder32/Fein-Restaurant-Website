@@ -74,7 +74,7 @@ The checkout experience in `payment.html` is driven by `payment.js` and currentl
 | Tax rate | `8%` |
 | Cart storage key | `fein-cart` |
 
-### Promo Codes :
+### Promo Codes:
 
 | Code | Effect |
 | --- | --- |
